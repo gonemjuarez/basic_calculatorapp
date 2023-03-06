@@ -1,14 +1,14 @@
 .divHome{
-    background-color: #222121;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 25px;
 }
 .calculatorMolde{
     width: 300px;
     height:500px;
-    display: flex;
+    display: grid;
+    grid-auto-rows: minmax(60px, auto);
+    grid-template-columns: repeat(4, 1fr);
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -16,10 +16,6 @@
 .fila{
     display: flex;
     padding: 10px;
-}
-
-.articleButton{
-    padding: 10px 8px;
 }
 
 .articleButtonVal{
@@ -62,13 +58,16 @@
 }
 .formDisplay{
     display: flex;
-    justify-content: left;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-top: -40px;
 }
 .formDisplay > input{
     display: flex;
     height: 100%;
-    width: 15rem;
-    padding: 8px 10px;
+    width: 200%;
+    padding: 10px 10px;
     border: 0;
     font-size: 30px;
     justify-content: flex-end;
@@ -76,5 +75,72 @@
     color: white;
     text-decoration: none;
     display: flex;
+    text-align: right;
     justify-content: flex-end;
+}
+
+.container{
+    width: 350px;
+    height: 450px;
+    border: 1px solid #e4e2e2;
+    border-radius: 16px;
+    margin-top: 100px;
+    background-color: #111;
+    padding: 20px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.deleteButton{
+    grid-column: 1/3;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    color: white;
+}
+.deleteTodo{
+    grid-column: 3/5;
+    cursor: pointer;
+    background-color: #b11313;
+    color: white;
+    font-size: 25px;
+    border-radius: 20px;
+}
+.calculatorDiv{
+    display: grid;
+    margin: 5px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(60px, auto);
+    justify-content: center;
+}
+.calculatorDiv > button{
+    cursor: pointer;
+    border: none;
+}
+.buttonNum{
+    color: #fff;
+    font-size: 20px;
+    background-color: #335c9b;
+    border-radius: 20px;
+    padding: 15px 15px;
+    margin: 5%;
+    cursor: pointer;
+}
+.buttonOper{
+    color: #fff;
+    font-size: 20px;
+    background-color: #74e8fc;
+    border-radius: 20px;
+    padding: 15px 15px;
+    margin: 5%;
+}
+
+.buttonFin{
+    background-color: rgb(27, 54, 0);
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 15px 15px;
+    color: white;
 }
