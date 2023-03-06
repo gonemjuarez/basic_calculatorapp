@@ -1,0 +1,80 @@
+.divHome{
+    background-color: #222121;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+}
+.calculatorMolde{
+    width: 300px;
+    height:500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.fila{
+    display: flex;
+    padding: 10px;
+}
+
+.articleButton{
+    padding: 10px 8px;
+}
+
+.articleButtonVal{
+    padding: 10px 8px;
+}
+.articleButtonVal > button{
+    background-color: #F4E44F;
+    color: #0a0a0a;
+    border: none;
+    font-size: 25px;
+    width: 55px;
+    height: 55px;
+    transition: 1s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+}
+
+.articleButtonVal > button:hover{
+    transform: scale(1.1);
+    transition: 0.5s ease;
+    background-color: #dfdb1e;
+}
+
+.articleButton > button{
+    background-color: #F04D4D;
+    color: #fff;
+    border-radius: 100%;
+    font-size: 20px;
+    border: none;
+    width: 55px;
+    height: 55px;
+    transition: 1s ease;
+}
+.articleButton > button:hover{
+    transform: scale(1.1);
+    transition: 0.5s ease;
+    background-color: #b11313;
+}
+.formDisplay{
+    display: flex;
+    justify-content: left;
+}
+.formDisplay > input{
+    display: flex;
+    height: 100%;
+    width: 15rem;
+    padding: 8px 10px;
+    border: 0;
+    font-size: 30px;
+    justify-content: flex-end;
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-end;
+}
