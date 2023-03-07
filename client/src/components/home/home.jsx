@@ -36,6 +36,7 @@ const deleteOne = () => {
             <div className="calculatorDiv">
                         <button  onClick={deleteOne}  className='deleteButton'><FiDelete/></button>   
                         <button name="C" onClick={clear} className="deleteTodo">C</button>
+                        <button name="-" className="buttonOper" onClick={handleClick}>-</button>
                         <button name="7" className="buttonNum" onClick={handleClick}>7</button>
                         <button name="8" className="buttonNum" onClick={handleClick}>8</button>
                         <button name="9" className="buttonNum" onClick={handleClick}>9</button>
@@ -51,7 +52,7 @@ const deleteOne = () => {
                         <button name="." className="buttonNum" onClick={handleClick}>.</button>
                         <button name="0" className="buttonNum" onClick={handleClick}>0</button>
                         <button className="buttonFin" onClick={calculate}>=</button>
-                        <button name="-" className="buttonOper" onClick={handleClick}>-</button>
+                        
                 </div>
         </div>
     </div>
